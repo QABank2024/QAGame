@@ -9,7 +9,7 @@ public class GameEngine {
 
         System.out.print("Enter number of monsters: ");
         int numMonsters = scanner.nextInt();
-        // Checking git2
+        // Checking git3
         Game game = new Game(gridSize, numMonsters);
         game.startGame();
     }
