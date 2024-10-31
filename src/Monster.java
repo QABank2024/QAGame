@@ -14,4 +14,10 @@ public class Monster {
     public void greet() {
         System.out.println("You've been caught by " + name + "! " + name + " says: 'Gotcha!'");
     }
+
+    // Methods for moving the monster
+    public void moveRight() { x++; }
+    public void moveLeft() { x--; }
+    public void moveDown() { y++; }
+    public void moveUp() { y--; }
 }
