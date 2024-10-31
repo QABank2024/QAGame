@@ -1,3 +1,5 @@
+// Game.java
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -69,6 +71,13 @@ public class Game {
             case "D": if (playerX < gridSize - 1) playerX++; else return false; break;
             default: return false;
         }
+
+        // Check for collision with any monster after moving
+        if (checkLoss()) {
+            System.out.println("Oh no! A monster caught you. Game over.");
+            System.exit(0); // End the game if player lands on a monster
+        }
+
         return true;
     }
 
