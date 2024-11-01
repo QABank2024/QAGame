@@ -39,7 +39,7 @@ public class SpaceShooter extends JPanel implements ActionListener, KeyListener,
     private long lastShotTime = 0;
     private static final int SHOT_COOLDOWN = 100;
     private static final int BULLET_SPEED = 8;
-    private static final int MAX_BULLETS = 50;
+    private static final int MAX_BULLETS = 200;
     private static final int BULLET_SPREAD = 10;
 
     // Game settings
@@ -338,7 +338,7 @@ public class SpaceShooter extends JPanel implements ActionListener, KeyListener,
         currentUser.setHighScore(score);
 
         // Apply double points to exp too
-        int expPoints = points / 10;
+        int expPoints = points * 100;
         if (isPowerUpActive(PowerUpType.DOUBLE_POINTS)) {
             expPoints *= 2;
         }

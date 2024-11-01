@@ -13,7 +13,7 @@ public class User implements Serializable {
 
     // Prestige bonuses
     private static final double SCORE_MULTIPLIER_PER_PRESTIGE = 0.2; // +20% score per prestige
-    private static final double EXP_MULTIPLIER_PER_PRESTIGE = 0.15; // +15% exp per prestige
+    private static final double EXP_MULTIPLIER_PER_PRESTIGE = 0.2; // +15% exp per prestige
     private static final int BULLET_BONUS_PER_PRESTIGE = 1; // +1 bullet every 2 prestige levels
 
     public User(String username) {
